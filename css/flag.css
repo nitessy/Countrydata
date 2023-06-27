@@ -9,6 +9,8 @@ html{
     box-sizing: border-box;
     height: 100%;
 }
+.naam{
+	color:black; }
 body{
     width: 100%;
     min-height: 100vh;
