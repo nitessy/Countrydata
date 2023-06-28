@@ -114,3 +114,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
 });
+
+
+
+
+
+
+
+
+var fix = document.querySelector(".me")
+ const change = document.querySelector(".navbar")
+ const body = document.querySelector("body")
+ const mobile_nav = document.querySelector(".button");
+ const nav_header = document.querySelector(".header");
+
+
+
+
+
+
+ const togglenavbar = () =>{
+  nav_header.classList.toggle("active") ;
+ 
+
+};
+
+mobile_nav.addEventListener("click", ()=> togglenavbar());
