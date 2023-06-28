@@ -9,10 +9,11 @@ html{
     box-sizing: border-box;
     height: 100%;
 }
-.naam{
-	color:black; }
 body{
     width: 100%;
+    background-color: #f3e3c3;
+    background-image: linear-gradient(450deg, #f3e3c3 0% , #fbe7a1, #ede275);
+
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
@@ -64,6 +65,7 @@ button{
     padding: 17px 14px;
     outline: 0;
     border: 0;
+    background-color: floralwhite;
     font-size: 15px;
     letter-spacing: 0.2px;
 }
@@ -79,6 +81,7 @@ button{
     margin-inline: auto;
      display: flex; 
      gap: 64px;
+     /* background-color: floralwhite; */
      flex-wrap: wrap;
      justify-content: space-between; 
 
@@ -86,6 +89,7 @@ button{
 .country{
     display: inline-block;
     width: 250px;
+    background-color: floralwhite;
     border-radius: 10px;
     box-shadow: 0 0 5px 0px rgba(0,0,0,0.3);
     overflow: hidden;
@@ -99,6 +103,7 @@ button{
 .card{
     padding-inline: 3%;
     padding-bottom: 2%; 
+    /* background-color: floralwhite; */
 }
 p{
     margin-block: 1.9%;
@@ -115,24 +120,31 @@ main{
     margin: 2.0%;
    
 }
-
+.naam{
+    color: #000;
+}
 
 @media(max-width: 920px){
     .countries-container{
         justify-content: center;
     }
+    .container{
+        /* align-items: center; */
+        justify-content: center;
+    }
     .form input{
-font-size: 10px;
+font-size: 12px;
 letter-spacing: 0.1px;
     }
     .form{
         position: unset;
     }
     .form i{
+        /* position: sticky; */
         display: none;
     }
 }
-    
+
 
 
 
@@ -269,10 +281,10 @@ hr{
 
 @keyframes run{
     0%{
-        left: -20px;
+        left: 0px;
     }
 100%{
-    left: 100%;
+    left: 80%;
 }
 
 
@@ -353,6 +365,7 @@ body{
     display: flex;
     font-size: large;
      gap: 4.1rem; 
+     margin-right: 12px;
     list-style: none;
     background-image: linear-gradient(
 	to right,
@@ -388,7 +401,9 @@ body{
         z-index: 999;
         border: 3px solid black;
     }
-
+h1{
+    font-size: 1.4rem;
+}
 
     .navbar{
         width: 100%;
@@ -438,5 +453,8 @@ z-index: 999;
     
     }
 
- 
+  h1{
+    text-align: center;
+    margin-block: 2%;
+ }
 
