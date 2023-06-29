@@ -9,12 +9,16 @@ const capital = document.querySelector('.capital')
 const toplevel = document.querySelector('.toplevel')
 const currencies = document.querySelector('.currency')
 const languages = document.querySelector('.languages')
+const switc = document.querySelector('.switc')
+
 
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText = true`)
 .then((res)  =>  res.json())
 .then(([country]) => {
     flagImage.src = country.flags.svg
     countryNameh1.innerText = country.name.common
+    switc.innerText = (  "Welcome to" + "  " + country.name.common) ;
+   
 
     if(country.languages){
         languages.innerText = Object.values(country.languages)[0]
