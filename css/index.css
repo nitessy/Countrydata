@@ -1,20 +1,193 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Cinzel', serif;
-}
-body{
-    min-height: 100%;
-    background-image: linear-gradient(450deg, #f3e3c3 0% , #fbe7a1, #ede275);
-    background-color: #f3e3c3;
-    width: 100%;
+
+     box-sizing: border-box; 
 }
 html{
-    overflow-x: hidden;
+     height: 100%; 
+     /* width: 100%; */
+     box-sizing: border-box; 
+     overflow-x: hidden;
+     /* width: fit-content; */
+     
+}
+body{
+       position: relative; 
+       /* box-sizing: inherit; */
+ background-image: linear-gradient(450deg, #f3e3c3 0% , #fbe7a1, #ede275);
+    background-color: #f3e3c3;
+
+    width: 100%;
+     min-height: 100%; 
+/* background-color: white; */
+/* overflow: scroll; */
+}
+.container{
+    width: 100%;   
+    /* position: relative;
+    min-height: 100vh; */
+    padding: 1%;
+    /* margin-bottom: 30px; */
+   
 }
 
-.header{
+
+main{
+    margin: 2.7%;
+    padding-bottom: 80px;
+    /* flex: 1; */
+    /* position: absolute; */
+}
+
+
+
+footer{
+    width: 100%;
+      position: absolute;  
+    bottom: 0;
+    /* z-index: 1; */
+ height: 22.75rem;
+    background: linear-gradient(to right, #00093c , #2d0b00);
+    color: white;
+    padding: 30px 0 20px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 17px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;  
+}
+ul li{
+    list-style: none;
+  
+    margin-bottom: 12px;
+}
+ ul li a{
+    text-decoration: none;
+     color: white; 
+}
+.social .fa-brands{
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: #fff;
+    color: #000;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.social .fa-solid{height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: #fff;
+    color: #000;
+    margin-right: 15px;
+    cursor: pointer;}
+h3{
+    color: white;
+}
+.col:nth-child(2){
+    flex-basis: 15%;
+}
+hr{
+    width: 90%;
+    border:0;
+    border-bottom: 1px solid #ccc;
+    margin:20px auto ;
+}
+.copyright{
+    text-align: center;
+}
+
+@media(max-width:920px){
+    footer{
+        bottom: unset;  
+    }
+    .col{
+        flex-basis: 100%;
+
+    }
+    body{
+        box-sizing: unset;
+        
+    }
+    footer{
+        padding: 30px 0 30px;
+        position: absolute;
+        height: unset;
+    }
+    #contentwrap{
+        padding-bottom: unset;
+    }
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    animation: run 2s linear infinite;
+}
+
+
+@keyframes run{
+    0%{
+        left: 0px;
+    }
+100%{
+    left: 80%;
+}
+
+
+
+}
+
+
+
+
+/* Navbar */
+
+
+ .header{
     padding: 0 2 rem;
     height: 5.3rem;
     width: 100%;
@@ -109,25 +282,17 @@ body{
         z-index: 999;
         border: 3px solid black;
     }
-h1{
-    font-size: 1.4rem;
-}
+
 
     .navbar{
         width: 100%;
         height: 100vh;
          /* background: #041a31 ;  */
-        background: linear-gradient(to right,  white,
-        white 22%, 
-        gold 45%,
-        rgb(214, 217, 31),
-        #eac117 55%,
-        #eac117 78%,
-        #eac117 100%);
+        background: linear-gradient(to right, #00093c , #2d0b00);
         position: absolute;
         top: 0;
         left: 0;
-z-index: 999;
+
 
         display: flex;
         justify-content: center;
@@ -164,8 +329,19 @@ z-index: 999;
         display: none;
     }
 
+
+}
+ 
+#pagecontainer{
+    position: relative;
+    min-height: 100vh;
+}
+#contentwrap{
+    padding-bottom: 22.75rem;
+}
+
     
-    }
+    
    
       section {
         position: relative;
