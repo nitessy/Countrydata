@@ -35,7 +35,7 @@
         <h4>"Your Window to the World's Forecast"</h4>
     </div>
     <div class="search">
-        <input type="text" placeholder="enter your location" spellcheck="false">
+        <input type="text" placeholder="Enter your city " spellcheck="false">
         <button><img src="img/images/search.png"></button>
     </div>
     <div class="error">
@@ -46,7 +46,7 @@
         <h1 class="temp">32°c</h1>
         <h2 class="city">Bangalore</h2>
         <div class="detail">
-            <div class="col">
+            <div class="coll">
                 <img src="img/images/humidity.png">
                 <div>
                     <p class="humidity">50%</p>
@@ -108,6 +108,14 @@ const weatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather(city){
     const response =await fetch(apiurl + city + `&appid=${apikey}`);
+    
+    if(response.status == 404){
+        document.querySelector(".error").style.display = "block";
+        document.querySelector(".weather").style.display = "none";
+    }else{
+
+    }
+    
     var data = await response.json();
 
 
@@ -133,6 +141,7 @@ async function checkWeather(city){
     }
     
     document.querySelector(".weather").style.display = "block";
+    document.querySelector(".error").style.display = "none";
 
 }
 
