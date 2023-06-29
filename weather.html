@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+    <div id="pagecontainer">
+        <div id="contentwrap">
+      <header class="header">
+        <h2>Web<span>Rangers</span></h2>
+        <nav class="navbar">
+            <ul class="list">
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="flag.html">Countries</a></li>
+                <li><a class="link" href="weather.html">Weather</a></li>
+                <li><a class="link" href="#">News</a></li>
+                <li><a class="link" href="history_events.html">History</a></li>
+            </ul>
+        </nav>
+    
+<div class="card">
+    <div class="head">
+        <h2>Global Weather Watch</h2>
+        <h4>"Your Window to the World's Forecast"</h4>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="enter your location" spellcheck="false">
+        <button><img src="img/images/search.png"></button>
+    </div>
+    <div class="error">
+        <p>Invalid City Name</p>
+    </div>
+    <div class="weather">
+        <img src="img/images/rain.png" class="weather-icon">
+        <h1 class="temp">32°c</h1>
+        <h2 class="city">Bangalore</h2>
+        <div class="detail">
+            <div class="col">
+                <img src="img/images/humidity.png">
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="img/images/wind.png">
+                <div>
+                    <p class="Wind">50%</p>
+                    <p>Wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+  
+<script>
+
+const apikey ="8304c554ec8c4ccdf3b409afc4d6c70e";
+const apiurl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+
+const searchBox = document.querySelector(".search input");
+const searchBtn = document.querySelector(".search button");
+const weatherIcon = document.querySelector(".weather-icon");
+
+
+async function checkWeather(city){
+    const response =await fetch(apiurl + city + `&appid=${apikey}`);
+    var data = await response.json();
+
+
+    document.querySelector(".city").innerHTML = data.name;
+    document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
+    document.querySelector(".humidity").innerHTML = data.main.humidity + "%" ;
+    document.querySelector(".Wind").innerHTML = data.wind.speed + "km/h";
+
+    if(data.weather[0].main == "Clouds"){
+        weatherIcon.src = "img/images/clouds.png";
+    }
+    else if(data.weather[0].main == "Clear"){
+        weatherIcon.src = "img/images/clear.png";
+    }
+    else if(data.weather[0].main == "Rain"){
+        weatherIcon.src = "img/images/rain.png";
+    }
+    else if(data.weather[0].main == "Drizzle"){
+        weatherIcon.src = "img/images/drizzle.png";
+    }
+    else if(data.weather[0].main == "Mist"){
+        weatherIcon.src = "img/images/Mist.png";
+    }
+    
+    document.querySelector(".weather").style.display = "block";
+
+}
+
+searchBtn.addEventListener("click", ()=>{
+    checkWeather(searchBox.value);
+})
+
+
+
+</script>
+
+</body>
+</html>
