@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Cinzel', serif;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     box-sizing: border-box;
 
 }
@@ -9,15 +10,22 @@ body{
     background-image: linear-gradient(450deg, #f0d398 0% , #f6df88, #ecbc43);
 }
 
+html{
+    overflow-x: hidden;
+}
+
 .card{
     width: 90%;
-    max-width: 470px;
+ max-width: 570px; 
     background: linear-gradient(135deg, #383809, #140352);
     color: #fff;
-    margin: 50px auto 0;
+    /* margin: 50px auto 0; */
     margin-bottom: 50px;
+  padding-left: 20%;
+    margin-top: 15%;
     border-radius: 20px;
     padding: 40px 35px;
+     margin-inline: auto;
     text-align: center;
 }
 .head{
@@ -25,7 +33,8 @@ body{
 }
 .head h4{
     margin-top: 10px ;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 9px;
+    /* font-family:'Times New Roman', Times, serif; */
 }
 .search{
     width: 100%;
@@ -106,3 +115,187 @@ body{
     margin-top: 10px;
     display: none;
 }
+
+
+@media(max-width: 550px){
+    .card{
+        width: 92%;
+
+    }
+    .search input{
+        height: 45px;
+        font-size: 14px;
+        width: 250px;
+        margin-right: 10px;
+        margin-left: 2px;
+
+        padding: 8px 22px;
+    }
+    .search button{
+        width: 40px;
+        height: 40px;
+        padding-right: auto;
+        margin-right: 2px;
+        /* border-radius: 70%; */
+    }
+    .search button img{
+        width: 22px;
+    }
+    head h4{
+        font-size: 8px;
+    }
+}
+
+
+ .header{
+    padding: 0 2 rem;
+    height: 5.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black; 
+    background: linear-gradient(to right, #00093c , #2d0b00);
+    position: sticky;
+    border:3px solid darkblue;
+} 
+
+
+.icon{
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.icon[name="close-outline"]{
+    display: none;
+}
+
+.button{
+    display: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.header h2{
+     font-size: 1.6rem; 
+     /* margin-bottom: 70px;  */
+     margin-left: 10px;
+    transition: 0.8s;
+    background-image: linear-gradient(
+        to right,
+        #b8860b 0,
+        #b8860b 22%, 
+        #b8860b 45%,
+        #b8860b 50%,
+        #b8860b 55%,
+        #b8860b 78%,
+        #b8860b 100%
+        );
+       color:transparent;
+       -webkit-background-clip:text;
+}
+
+.header h2 span{
+    color: white;
+    font-size: 1.8rem; 
+}
+body{
+    overflow-x: hidden;
+}
+ .list{
+    display: flex;
+    font-size: large;
+     gap: 4.1rem; 
+     margin-right: 12px;
+    list-style: none;
+    background-image: linear-gradient(
+	to right,
+    
+        white,
+        white 22%, 
+        gold 45%,
+        rgb(214, 217, 31),
+        #eac117 55%,
+        #eac117 78%,
+        #eac117 100% 
+	 );
+    -webkit-background-clip: text;
+}
+ /* .list:hover{
+    color:white;
+    scale(1.2);
+    transform: .2s;
+}   */
+
+.link:link,.link:visited{
+    display: inline-block;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color:transparent;
+}
+
+@media(max-width:920px){
+    .button{
+        display: block;
+        z-index: 999;
+        border: 3px solid black;
+    }
+
+
+    .navbar{
+        width: 100%;
+        height: 100vh;
+         /* background: #041a31 ;  */
+         background: linear-gradient(to right, #00093c , #2d0b00);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: all 0.2s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+      
+    } 
+
+    .list{
+        flex-direction: column;
+        align-items:center ;
+        
+    }
+
+    .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .button .icon[name="close-outline"]{
+        display: block;
+    }
+
+    .active .button .icon[name="menu-outline"]{
+        display: none;
+    }
+
+
+}
+ 
+#pagecontainer{
+    position: relative;
+    min-height: 100vh;
+}
+#contentwrap{
+    padding-bottom: 22.75rem;
+} 
