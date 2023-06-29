@@ -23,9 +23,9 @@ html{
     background: linear-gradient(135deg, #383809, #140352);
     color: #fff;
     /* margin: 50px auto 0; */
-    margin-bottom: 50px;
+    margin-bottom: 12%;
   padding-left: 20%;
-    margin-top: 15%;
+    margin-top: 18%;
     border-radius: 20px;
     padding: 40px 35px;
      margin-inline: auto;
@@ -404,7 +404,7 @@ hr{
         height: unset;
     }
     #contentwrap{
-        padding-bottom: unset;
+        /* padding-bottom: unset; */
     }
 }
 
