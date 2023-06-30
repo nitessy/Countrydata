@@ -56,7 +56,7 @@ body{
     max-width: auto;
     min-width:320px;
     padding: 20px 35px;
-    background: linear-gradient(to right, #b8860b, #edd238);
+    background: linear-gradient(135deg, #2d0b00, #140352);
 
     border-radius: 20px;
     margin: 15px;
@@ -69,23 +69,23 @@ body{
     display:block;
     text-align: center;
     margin: 25px 0px;
-    color: darkblue;
+    color:#b8860b;
 }
 h5{
-    color: darkblue;
+    color: white;
     font-size: 20px;
     margin-bottom: 15px;
 
 }
 .pra p{
-    color: #2d0b00;
-    font-size: 15px;
+    color:white;
+    font-size: 20px;
     line-height: auto ;
     margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .card .switch{
-    background-color: darkblue;
+    background-color: white;
     color:#b8860b;
     border: 2px solid transparent;
     font-weight: bold;
@@ -96,8 +96,8 @@ h5{
 }
 .card .switch:hover{
     background-color: transparent;
-    color: darkblue;
-    border: 2px solid darkblue;
+    color: white;
+    border: 2px solid #b8860b;
     cursor: pointer;
 }
 footer{
