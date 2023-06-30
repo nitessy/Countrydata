@@ -63,8 +63,8 @@ function onNavItemClick(id) {
     curSelectedNav.classList.add("active");
 }
 
-const searchButton = document.getElementById("search-button");
-const searchText = document.getElementById("search-text");
+const searchButton = document.querySelector(".search-btn")
+const searchText = document.querySelector(".search-input")
 
 searchButton.addEventListener("click", () => {
     const query = searchText.value;
@@ -73,3 +73,18 @@ searchButton.addEventListener("click", () => {
     curSelectedNav?.classList.remove("active");
     curSelectedNav = null;
 });
+
+const togglenavbar = () =>{
+    nav_header.classList.toggle("active") ;
+    // if(fix.style.position === 'relative'){
+    //     fix.style.position === 'fixed' ; 
+    // } else{
+    //     fix.style.position=== 'relative'
+    // } 
+    // fix.style.overflow == "hidden" ;
+     
+    // html.style.position = "fixed";
+  
+};
+
+mobile_nav.addEventListener("click", ()=> togglenavbar());
