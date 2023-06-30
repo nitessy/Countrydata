@@ -471,5 +471,10 @@ body{
     font-size: 32px;
     font-weight: 600;
    }   
-      
+ .extra{
+    font-size: 1px;
+    color: #f5ba27;
+    margin-top: 300px;
+    margin-left: 1000px;
+ }     
       
