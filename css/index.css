@@ -38,7 +38,7 @@ body{
     padding: 100px 0px ;
 }
 .title h2{
-    color: darkblue;
+    color:#140352;
     font-size: 50px;
     margin: 30px auto;
     text-align: center;
@@ -92,6 +92,7 @@ h5{
     padding: 9px 10px;
     border-radius: 15px;
     transition: .4s;
+    text-decoration: none;
 
 }
 .card .switch:hover{
