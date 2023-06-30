@@ -195,12 +195,17 @@ main{
     .textContainer {
       font-size: 28px;
     }
+    
   }
   
   @media screen and (max-width: 480px) {
     .textContainer {
       font-size: 24px;
     }
+    main {
+      margin-bottom: 40%;
+      padding-bottom: 49%;
+  }
   }
   
   .invisible {

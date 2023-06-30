@@ -1,7 +1,7 @@
 const countriescontainer = document.querySelector('.countries-container')
 // const search = document.querySelector('.search')
 // const countryName = document.querySelectorAll('.naam')
-const search = document.querySelector('.form input')
+const search = document.querySelector('.search-input')
 var display
 var allCountriesData 
 fetch('https://restcountries.com/v3.1/subregion/Northern Africa')
