@@ -83,7 +83,7 @@ h5{
     margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.card .button{
+.card .switch{
     background-color: darkblue;
     color:#b8860b;
     border: 2px solid transparent;
@@ -93,7 +93,7 @@ h5{
     transition: .4s;
 
 }
-.card .button:hover{
+.card .switch:hover{
     background-color: transparent;
     color: darkblue;
     border: 2px solid darkblue;
