@@ -38,7 +38,7 @@ body{
     padding: 100px 0px ;
 }
 .title h2{
-    color: darkblue;
+    color:#140352;
     font-size: 50px;
     margin: 30px auto;
     text-align: center;
@@ -92,6 +92,7 @@ h5{
     padding: 9px 10px;
     border-radius: 15px;
     transition: .4s;
+    text-decoration: none;
 
 }
 .card .switch:hover{
@@ -462,14 +463,19 @@ body{
       }
       
   .pra p{
-    font-size: 25px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    color: #281d1d;
+    color: white;
   }    
    h5{
     font-size: 32px;
     font-weight: 600;
    }   
-      
+ .extra{
+    font-size: 1px;
+    color: #f5ba27;
+    margin-top: 300px;
+    margin-left: 1000px;
+ }     
       
