@@ -24,6 +24,10 @@ body{
 /* background-color: white; */
 /* overflow: scroll; */
 }
+
+.span{
+    color: #b8860b;
+}
 .container{
     width: 100%;   
     /* position: relative;
