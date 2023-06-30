@@ -25,9 +25,6 @@ body{
 /* overflow: scroll; */
 }
 
-.span{
-    color: #b8860b;
-}
 .container{
     width: 100%;   
     /* position: relative;
@@ -324,11 +321,6 @@ body{
 	 );
     -webkit-background-clip: text;
 }
- /* .list:hover{
-    color:white;
-    scale(1.2);
-    transform: .2s;
-}  */
 
 .link:link,.link:visited{
     display: inline-block;
