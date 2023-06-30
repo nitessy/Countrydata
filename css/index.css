@@ -32,17 +32,73 @@ body{
     /* margin-bottom: 30px; */
    
 }
-
-
-main{
-    margin: 2.7%;
-    padding-bottom: 80px;
-    /* flex: 1; */
-    /* position: absolute; */
+.service{
+    background:linear-gradient(450deg, #f3e3c3 0% , #fbe7a1, #ede275);
+    width: 100%;
+    padding: 100px 0px ;
 }
+.title h2{
+    color: darkblue;
+    font-size: 50px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display:contents;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    
+    
+}
+.card{
+    height: 385px;
+    max-width: auto;
+    min-width:320px;
+    padding: 20px 35px;
+    background: #b8860b;
+    border-radius: 20px;
+    margin: 15px;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size:50px;
+    display:block;
+    text-align: center;
+    margin: 25px 0px;
+    color: darkblue;
+}
+h5{
+    color: darkblue;
+    font-size: 20px;
+    margin-bottom: 15px;
 
+}
+.pra p{
+    color: #2d0b00;
+    font-size: 15px;
+    line-height: auto ;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card .button{
+    background-color: darkblue;
+    color:#b8860b;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 10px;
+    border-radius: 15px;
+    transition: .4s;
 
-
+}
+.card .button:hover{
+    background-color: transparent;
+    color: darkblue;
+    border: 2px solid darkblue;
+    cursor: pointer;
+}
 footer{
     width: 100%;
       position: absolute;  
