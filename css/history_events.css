@@ -129,6 +129,7 @@ main{
   }
   .search-input::placeholder {
     color:  #1b0909;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* font-family: cursive; */
   }
   .search-input:focus {
