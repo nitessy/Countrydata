@@ -6,8 +6,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    overflow-x: hidden;
+}
 body{
-    background: #007bff;
+    /* background: #007bff; */
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+    background-color: #f3e3c3;
+    background-image: linear-gradient(450deg, #f3e3c3 0% , #fbe7a1, #ede275);
+
 }
 ::selection{
     color: #fff;
@@ -28,6 +37,8 @@ body{
 .quiz_box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;
+    max-width: 380px;
+    width: 94%;
     z-index: 5;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
@@ -35,16 +46,17 @@ body{
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
-    color: #007bff;
+    background: #007bff;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #fff;
+    color: #fff;
     cursor: pointer;
 }
 .info_box{
-    width: 540px;
+    max-width: 520px;
+    width: 90%;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -54,7 +66,7 @@ body{
 }
 .info_box .info-title{
     height: 60px;
-    width: 100%;
+    width: 90%;
     border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
@@ -75,7 +87,8 @@ body{
     color: #007bff;
 }
 .info_box .buttons{
-    height: 60px;
+    /* height: 60px; */
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -84,8 +97,8 @@ body{
 }
 .info_box .buttons button{
     margin: 0 5px;
-    height: 40px;
-    width: 100px;
+    height: 50px;
+    width: 110px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -103,6 +116,9 @@ body{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+}
+.time_line{
+    width: 550px;
 }
 .quiz_box header{
     position: relative;
@@ -137,6 +153,7 @@ body{
     font-size: 17px;
     user-select: none;
 }
+
 .quiz_box header .timer .timer_sec{
     font-size: 18px;
     font-weight: 500;
@@ -335,3 +352,11 @@ footer button.show{
     background: #007bff;
 }
 
+
+
+@media (max-width: 600px) {
+    .result_box .buttons button {
+        font-size: unset;
+    
+}
+}

@@ -456,6 +456,12 @@ main {
         transform: .2s;
     }  */
     
+
+main{
+    margin-bottom: 50%;
+    padding-bottom: 50%;
+}
+
     .link:link,.link:visited{
         display: inline-block;
         text-transform:uppercase;
