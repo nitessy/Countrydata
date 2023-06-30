@@ -74,6 +74,14 @@ searchButton.addEventListener("click", () => {
     curSelectedNav = null;
 });
 
+
+
+const mobile_nav = document.querySelector(".button");
+const nav_header = document.querySelector(".header");
+
+
+
+
 const togglenavbar = () =>{
     nav_header.classList.toggle("active") ;
     // if(fix.style.position === 'relative'){
