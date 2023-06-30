@@ -125,6 +125,7 @@ main{
     border-radius: 6px;
     border:none;
     transition: all .4s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* font-family: cursive; */
   }
   .search-input::placeholder {
