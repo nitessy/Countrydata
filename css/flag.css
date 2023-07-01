@@ -335,7 +335,9 @@ hr{
 
 
 
-
+main{
+    margin-top: 12%;
+}
 
 
 
@@ -344,13 +346,14 @@ hr{
     padding: 0 2 rem;
     height: 5.3rem;
     width: 100%;
+    top: 0;
     display: flex;
     z-index: 1;
     justify-content: space-between;
     align-items: center;
     background-color:black; 
     background: linear-gradient(to right, #00093c , #2d0b00);
-    position: sticky;
+    position: fixed;
     border:3px solid darkblue;
 } 
 
@@ -435,6 +438,9 @@ body{
         display: block;
         z-index: 999;
         border: 3px solid black;
+    }
+    main{
+        margin-top: 20%;
     }
 h1{
     font-size: 1.4rem;

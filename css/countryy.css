@@ -273,12 +273,14 @@ hr{
     padding: 0 2 rem;
     height: 5.3rem;
     width: 100%;
+    top:0;
     display: flex;
+    z-index: 1;
     justify-content: space-between;
     align-items: center;
     background-color:black; 
     background: linear-gradient(to right, #00093c , #2d0b00);
-    position: sticky;
+    position: fixed;
     border:3px solid darkblue;
 } 
 
@@ -402,6 +404,10 @@ body{
         visibility: visible;
         pointer-events: auto;
     }
+    main{
+        margin-top: 36%;
+        padding-top: 10%;
+    }
 
     .active .button .icon[name="close-outline"]{
         display: block;
@@ -412,6 +418,10 @@ body{
     }
 
 
+}
+
+main{
+    margin-top: 13%;
 }
  
 #pagecontainer{
