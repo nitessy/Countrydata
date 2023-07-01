@@ -38,9 +38,8 @@ body{
     opacity: 1;
     max-width: 380px;
     width: 94%;
-    margin-top: 4%;
+    margin-top: 10%;
     z-index: 0;
-    /* padding-bottom: 7%; */
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -521,15 +520,12 @@ body{
 }
 
 main{
-    margin-top: 7%;
-
+    margin-top: 10%;
 }
 
 @media(max-width:800PX){
     main{
-        margin-top: 22%;
+        margin-top: 25%;
         padding-top: 6%;
     }
-
-    
 }
