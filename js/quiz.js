@@ -244,3 +244,22 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag; 
 }
+
+const mobile_nav = document.querySelector(".button");
+const nav_header = document.querySelector(".header");
+// const foot = document.querySelector(".footer")
+
+const togglenavbar = () =>{
+    nav_header.classList.toggle("active") ;
+    // if(fix.style.position === 'relative'){
+    //     fix.style.position === 'fixed' ; 
+    // } else{
+    //     fix.style.position=== 'relative'
+    // } 
+    // fix.style.overflow == "hidden" ;
+     
+    // html.style.position = "fixed";
+  
+};
+
+mobile_nav.addEventListener("click", ()=> togglenavbar());

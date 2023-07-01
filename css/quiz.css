@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
 *{
     margin: 0;
     padding: 0;
@@ -45,12 +45,13 @@ body{
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
-    color: #007bff;
+    background-color: #b8860b;
     padding: 15px 30px;
     outline: none;
+    color: #d4edda;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    /* color: #fff; */
     cursor: pointer;
 }
 .info_box{
@@ -119,7 +120,7 @@ body{
 .time_line{
     width: 550px;
 }
-.quiz_box header{
+.quiz_box .heade{
     position: relative;
     z-index: 2;
     height: 70px;
@@ -131,11 +132,11 @@ body{
     justify-content: space-between;
     box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
 }
-.quiz_box header .title{
+.quiz_box .heade .title{
     font-size: 20px;
     font-weight: 600;
 }
-.quiz_box header .timer{
+.quiz_box .heade .timer{
     color: chocolate;
     background:#eaca7c;
     border: 1px solid chocolate;
@@ -153,7 +154,7 @@ body{
     user-select: none;
 }
 
-.quiz_box header .timer .timer_sec{
+.quiz_box .heade .timer .timer_sec{
     font-size: 18px;
     font-weight: 500;
     height: 30px;
@@ -166,7 +167,7 @@ body{
     border: 1px solid #343a40;
     user-select: none;
 }
-.quiz_box header .time_line{
+.quiz_box .heade .time_line{
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -248,7 +249,7 @@ footer{
     justify-content: space-between;
     border-top: 1px solid lightgrey;
 }
-footer .total_que span{
+ footer .total_que span{
     display: flex;
     user-select: none;
 }
@@ -256,7 +257,7 @@ footer .total_que span p{
     font-weight: 500;
     padding: 0 5px;
 }
-footer .total_que span p:first-child{
+ footer .total_que span p:first-child{
     padding-left: 0px;
 }
 footer button{
@@ -358,4 +359,165 @@ footer button.show{
         font-size: unset;
     
 }
+}
+
+
+
+
+
+
+
+.header{
+    padding: 0 2 rem;
+    height: 5.3rem;
+    width: 100%;
+    top:0;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black; 
+    background: linear-gradient(to right, #00093c , #2d0b00);
+    position: fixed;
+    border:3px solid darkblue;
+} 
+
+
+.icon{
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.icon[name="close-outline"]{
+    display: none;
+}
+
+.button{
+    display: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.header h2{
+     font-size: 1.6rem; 
+     /* margin-bottom: 70px;  */
+     margin-left: 10px;
+    transition: 0.8s;
+    background-image: linear-gradient(
+        to right,
+        #b8860b 0,
+        #b8860b 22%, 
+        #b8860b 45%,
+        #b8860b 50%,
+        #b8860b 55%,
+        #b8860b 78%,
+        #b8860b 100%
+        );
+       color:transparent;
+       -webkit-background-clip:text;
+}
+
+.header h2 span{
+    color: white;
+    font-size: 1.8rem; 
+}
+body{
+    overflow-x: hidden;
+}
+ .list{
+    display: flex;
+    font-size: large;
+     gap: 4.1rem; 
+     margin-right: 12px;
+    list-style: none;
+    background-image: linear-gradient(
+	to right,
+    
+        white,
+        white 22%, 
+        gold 45%,
+        rgb(214, 217, 31),
+        #eac117 55%,
+        #eac117 78%,
+        #eac117 100% 
+	 );
+    -webkit-background-clip: text;
+}
+ /* .list:hover{
+    color:white;
+    scale(1.2);
+    transform: .2s;
+}  */
+
+.link:link,.link:visited{
+    display: inline-block;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color:transparent;
+}
+
+@media(max-width:920px){
+    .button{
+        display: block;
+        z-index: 999;
+        border: 3px solid black;
+    }
+
+
+    .navbar{
+        width: 100%;
+        height: 100vh;
+         /* background: #041a31 ;  */
+        background: linear-gradient(to right, #00093c , #2d0b00);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: all 0.2s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+      
+    }
+
+    .list{
+        flex-direction: column;
+        align-items:center ;
+        
+    }
+
+    .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    main{
+        margin-top: 36%;
+        padding-top: 10%;
+    }
+
+    .active .button .icon[name="close-outline"]{
+        display: block;
+    }
+
+    .active .button .icon[name="menu-outline"]{
+        display: none;
+    }
+
+
+}
+
+main{
+    margin-top: 13%;
 }
