@@ -371,7 +371,7 @@ footer button.show{
 .header{
     padding: 0 2 rem;
     height: 5.3rem;
-    width: 90%;
+    width: 100%;
     top:0;
     display: flex;
     z-index: 1;
@@ -528,4 +528,6 @@ main{
         margin-top: 25%;
         padding-top: 6%;
     }
+
+    
 }
