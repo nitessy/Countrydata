@@ -40,7 +40,7 @@ body{
     width: 94%;
     margin-top: 4%;
     z-index: 0;
-    padding-bottom: 7%;
+    /* padding-bottom: 7%; */
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -521,7 +521,7 @@ body{
 }
 
 main{
-    margin-top: 8%;
+    margin-top: 7%;
 
 }
 
