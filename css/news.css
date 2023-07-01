@@ -539,3 +539,6 @@ main{
     #contentwrap{
         padding-bottom: 22.75rem;
     }
+    .contain .search-box .search-input{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
