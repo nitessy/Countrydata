@@ -115,7 +115,7 @@ main {
     border-radius: 4px;
     cursor: pointer;
     /* white-space: nowrap; */
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
     background-color: #fff;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -135,6 +135,8 @@ main {
 
 .card-content {
     padding: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .news-source {
@@ -547,4 +549,12 @@ main{
     }
     .contain .search-box .search-input{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #news-desc{
+        line-height: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
     }

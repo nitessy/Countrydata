@@ -4,7 +4,7 @@ const countriescontainer = document.querySelector('.countries-container')
 const search = document.querySelector('.search-input')
 var display
 var allCountriesData 
-fetch('https://restcountries.com/v3.1/subregion/Northern Africa')
+fetch('https://restcountries.com/v3.1/subregion/Northern Europe')
  .then((res) => res.json() )
  .then((data) => {
     renderCountries(data)
