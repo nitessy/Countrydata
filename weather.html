@@ -112,6 +112,18 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 
+
+
+searchBox.addEventListener("keyup", (e) =>{
+    e.preventDefault();
+    if(e.key === 'Enter'){
+        // console.log(e.target.value)
+        // checkWeather(searchBox.value);
+        searchBtn.click();
+    }
+})
+
+
 async function checkWeather(city){
     const response =await fetch(apiurl + city + `&appid=${apikey}`);
     

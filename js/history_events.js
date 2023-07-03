@@ -16,6 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
             textContainer.classList.remove('visible');
         }
     });
+
+
+    searchInput.addEventListener("keyup", (e) =>{
+        e.preventDefault();
+        if(e.key === 'Enter'){
+            // console.log(e.target.value)
+            // checkWeather(searchBox.value);
+            searchBtn.click();
+        }
+    })
+
+
   
     searchBtn.addEventListener('click', function() {
         var searchText = searchInput.value.trim();

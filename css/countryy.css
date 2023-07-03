@@ -50,8 +50,9 @@ main{
 
 
 .back{
-    padding: 7px 22px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3) ;
+    padding: 7px 20px;
+    font-size: 21px;
+    /* box-shadow: 0 0 5px rgba(0,0,0,0.1) ; */
     margin-left: 3%;
     margin-top: 3%;
    
@@ -63,7 +64,7 @@ a{
     /* margin-block: 10px; */
 }
 .back{
-    background-color: floralwhite;
+    /* background-color: floralwhite; */
     color: black;
     margin-block: 15px;
 }
@@ -421,7 +422,7 @@ body{
 }
 
 main{
-    margin-top: 13%;
+    margin-top: 11%;
 }
  
 #pagecontainer{
