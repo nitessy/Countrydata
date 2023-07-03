@@ -109,7 +109,7 @@ main {
     box-shadow: 0 0 5px 0px rgba(0,0,0,0.3);
     max-width: 340px;
     padding-inline: 1.2%;
-    min-height: 400px;
+    min-height: 380px;
     height: 450px;
     box-shadow: 0 0 4px #000;
     border-radius: 4px;
@@ -468,9 +468,9 @@ main {
     
 
 main{
-    margin-bottom: 50%;
-    padding-bottom: 50%;
-    margin-top: 13%;
+    /* margin-bottom: 50%; */
+    /* padding-bottom: 50%; */
+    margin-top: 11%;
 }
 
     .link:link,.link:visited{
