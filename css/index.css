@@ -263,8 +263,8 @@ hr{
 
 
 .icon{
-    width: 3.3rem;
-    height: 3.3rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .icon[name="close-outline"]{
@@ -278,7 +278,7 @@ hr{
     cursor: pointer;
 }
 .header h2{
-     font-size: 1.6rem; 
+     font-size: 1.5rem; 
      /* margin-bottom: 70px;  */
      margin-left: 10px;
     transition: 0.8s;
@@ -298,7 +298,7 @@ hr{
 
 .header h2 span{
     color: white;
-    font-size: 1.8rem; 
+    font-size: 1.7rem; 
 }
 body{
     overflow-x: hidden;
@@ -476,3 +476,6 @@ body{
     margin-left: 1000px;
  }     
       
+ /* .ionicon, svg {
+    width: 92%;
+ } */
