@@ -479,3 +479,9 @@ body{
  /* .ionicon, svg {
     width: 92%;
  } */
+
+ @media(max-width: 700px){
+    .extra{
+        margin-top: 10px;
+    }
+ }
