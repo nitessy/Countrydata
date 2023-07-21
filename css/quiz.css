@@ -36,7 +36,7 @@ body{
 .quiz_box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;
-    max-width: 380px;
+    max-width: 370px;
     width: 94%;
     margin-top: 3%;
     z-index: 0;
@@ -357,8 +357,15 @@ footer button.show{
 
 @media (max-width: 600px) {
     .result_box .buttons button {
-        font-size: unset;
+        font-size: unset; }
+        .info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult{
+    margin-top: 10%;
     
+}
+.header{
+    width: 92%;
 }
 }
 
@@ -371,7 +378,7 @@ footer button.show{
 .header{
     padding: 0 2 rem;
     height: 5.3rem;
-    width: 95%;
+    width: 100%;
     top:0;
     display: flex;
     z-index: 1;

@@ -3,7 +3,7 @@ let questions = [
     {
     numb: 1,
     question: "Largest Producer of Groundnut is?",
-    answer: "india",
+    answer: "India",
     options: [
       "India",
       "Sweden",
