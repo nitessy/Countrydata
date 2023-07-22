@@ -109,3 +109,5 @@ const togglenavbar = () =>{
 };
 
 mobile_nav.addEventListener("click", ()=> togglenavbar());
+
+window.alert("If the website is not working then don't worry.API limit reach for the day.Try again tomorrow.")
