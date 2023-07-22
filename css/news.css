@@ -482,6 +482,11 @@ main{
         font-size: 0.9rem;
         color:transparent;
     }
+    .fin{
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 1%;
+    }
     
     @media(max-width:920px){
         .button{
@@ -537,7 +542,9 @@ main{
         .active .button .icon[name="menu-outline"]{
             display: none;
         }
-    
+    .fin{
+        font-size: 1.3rem;
+    }
     
     }
      
@@ -559,3 +566,4 @@ main{
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     }
+   

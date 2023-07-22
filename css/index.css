@@ -482,6 +482,6 @@ body{
 
  @media(max-width: 700px){
     .extra{
-        margin-top: 10px;
+        margin-top: 0px;
     }
  }
