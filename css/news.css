@@ -95,7 +95,7 @@ ul {
 
 main {
     padding-block: 20px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .cards-container {
@@ -471,7 +471,7 @@ main {
 main{
     /* margin-bottom: 50%; */
     /* padding-bottom: 50%; */
-    margin-top: 11%;
+    margin-top: 8%;
 }
 
     .link:link,.link:visited{
@@ -485,7 +485,7 @@ main{
     .fin{
         text-align: center;
         font-size: 1.8rem;
-        margin-top: 1%;
+        /* margin-top: 1%; */
     }
     
     @media(max-width:920px){
@@ -553,7 +553,7 @@ main{
         min-height: 100vh;
     }
     #contentwrap{
-        padding-bottom: 22.75rem;
+        /* padding-bottom: 22.75rem; */
     }
     .contain .search-box .search-input{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
