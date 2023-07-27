@@ -476,3 +476,7 @@ main{
     margin-top: 13%;
 }
 
+@media screen and (max-width: 480px) {
+    .header{
+         height: 4rem; 
+    }};

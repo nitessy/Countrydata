@@ -436,3 +436,8 @@ main{
 #contentwrap{
     padding-bottom: 22.75rem;
 }
+
+@media screen and (max-width: 480px) {
+    .header{
+         height: 4rem; 
+    } }

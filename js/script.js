@@ -10,7 +10,7 @@ fetch('https://restcountries.com/v3.1/subregion/Northern Europe')
     renderCountries(data)
      allCountriesData = data
     
- })
+ });
  
     
   

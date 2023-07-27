@@ -539,3 +539,7 @@ main{
         padding-top: 6%;
     }
 }
+@media screen and (max-width: 480px) {
+    .header{
+         height: 4rem; 
+    }};

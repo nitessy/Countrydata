@@ -570,4 +570,8 @@ main{
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     }
+    @media screen and (max-width: 480px) {
+        .header{
+             height: 4rem; 
+        }};
    
