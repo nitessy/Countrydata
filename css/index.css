@@ -190,6 +190,9 @@ hr{
     .header{
         height: 5rem;
     }
+    .header h2{
+        /* margin-left: 0; */
+    }
     footer{
         bottom: unset;  
     }
