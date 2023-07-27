@@ -9,6 +9,7 @@
 }
 html{
     overflow: hidden;
+    scroll-behavior: smooth;
     width: min-content;
     
 }
@@ -386,7 +387,7 @@ footer button.show{
     background-color:black; 
     background: linear-gradient(to right, #00093c , #2d0b00);
     position: fixed;
-    border:3px solid darkblue;
+    border:2px solid darkblue;
 } 
 
 
@@ -466,6 +467,9 @@ body{
 }
 
 @media(max-width:920px){
+    .header{
+        height: 5rem;
+    }
     .button{
         display: block;
         z-index: 999;

@@ -7,6 +7,7 @@
 }
 html{
      height: 100%; 
+     scroll-behavior: smooth;
      /* width: 100%; */
      box-sizing: border-box; 
      overflow-x: hidden;
@@ -271,7 +272,7 @@ hr{
 
 
  .header{
-    padding: 0 2 rem;
+    padding: 0 2rem;
     height: 5.3rem;
     width: 100%;
     top:0;
@@ -282,7 +283,7 @@ hr{
     background-color:black; 
     background: linear-gradient(to right, #00093c , #2d0b00);
     position: fixed;
-    border:3px solid darkblue;
+    border:2px solid darkblue;
 } 
 
 
@@ -366,6 +367,9 @@ body{
         display: block;
         z-index: 999;
         border: 3px solid black;
+    }
+    .header{
+        height: 5rem;
     }
 
 
