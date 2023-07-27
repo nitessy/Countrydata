@@ -438,7 +438,7 @@ body{
         
         @media screen and (max-width: 480px) {
             .header{
-                 height: 4rem; 
+                 height: 4.86rem; 
             }
           section h2 {
             font-size: 30px;
